@@ -52,7 +52,7 @@ export default class PokemonDetailComponent implements OnInit {
     this.pokemonService
       .loadPokemon(id)
       .pipe(
-        tap(({ name }) => {
+        tap(({ name, sprites }) => {
           this.title.setTitle(`Pokemon - ${name}`);
           this.meta.updateTag({
             name: 'description',
@@ -68,7 +68,7 @@ export default class PokemonDetailComponent implements OnInit {
           });
           this.meta.updateTag({
             name: 'og:image',
-            content: this.pokemonPicture(),
+            content: sprites.other?.['official-artwork'].front_default ?? '',
           });
         }),
       )
@@ -81,8 +81,6 @@ export default class PokemonDetailComponent implements OnInit {
         }));
 
         this.pokemonStats.set(stats);
-
-        console.log('Pokemon stats:', stats);
       });
   }
 
