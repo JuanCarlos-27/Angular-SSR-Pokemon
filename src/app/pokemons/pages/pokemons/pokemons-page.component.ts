@@ -37,7 +37,6 @@ export default class PokemonsPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadPokemons();
-    console.log(this.currentPage());
   }
 
   // public pokemonResource = rxResource({
@@ -60,7 +59,6 @@ export default class PokemonsPageComponent implements OnInit {
       )
       .subscribe(
         (pokemons) => {
-          console.log(pokemons);
           this.pokemons.set(pokemons);
         },
         (error) => {
