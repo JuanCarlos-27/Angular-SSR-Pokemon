@@ -22,8 +22,9 @@ Los datos de los Pokemones provienen de [PokeAPI](https://pokeapi.co/), una API 
 
 ## Captura de Pantalla
 
-![alt text](image.png)
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/aefaf8d4-56df-4416-8732-1a9ca19bd077)
+
+![image](https://github.com/user-attachments/assets/ddd17e38-c514-43f6-b7fe-4bf7085f4471)
 
 ## Servidor de Desarrollo
 
