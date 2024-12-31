@@ -1,0 +1,32 @@
+<h1 class="text-7xl font-bold text-center mb-7">
+  Listado de
+  <span class="text-yellow-300 decoration-wavy underline"> Pokemons </span>
+</h1>
+
+<!-- @if (isLoading()) {
+  <pokemon-list-skeleton />
+} @else {
+  <pokemon-list />
+} -->
+
+<pokemon-list [pokemons]="pokemons()" />
+
+<footer class="flex justify-center items-center mt-10 gap-5">
+  <button
+    (click)="loadPokemons(-1)"
+    class="bg-white/25 px-5 py-1 rounded-lg hover:backdrop-brightness-150 transition-all hover:-rotate-2"
+  >
+    Anterior
+  </button>
+
+  <span class="text-white"> | </span>
+  <span> Página {{ currentPage() }} </span>
+  <span class="text-white"> | </span>
+
+  <button
+    (click)="loadPokemons(+1)"
+    class="bg-white/25 px-5 py-1 rounded-lg hover:backdrop-brightness-150 transition-all hover:rotate-2"
+  >
+    Siguiente
+  </button>
+</footer>

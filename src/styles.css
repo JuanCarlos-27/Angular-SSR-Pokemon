@@ -5,3 +5,17 @@
 * {
   color-scheme: light dark;
 }
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3176f8;
+  font-family: 'Josefin Sans Variable', sans-serif;
+}
+
+/* @view-transition {
+  navigation: auto;
+} */
