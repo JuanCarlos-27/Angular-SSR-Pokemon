@@ -10,6 +10,8 @@ Se ha implementado `NgOptimizedImage` para optimizar la carga de imágenes de lo
 
 También se ha creado un pequeño sistema de paginación para facilitar la navegación a través de la lista de Pokemones.
 
+La aplicación también utiliza las ViewTransitions API nativas para mejorar la experiencia de usuario con transiciones suaves entre vistas.
+
 ## Tecnologías Utilizadas
 
 ### Tailwind CSS
